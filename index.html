@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_O</title>
+    <link rel="icon" type="image/x-icon" href="./image1.png">
+
+    <style>
+        .parent {
+            width: 320px;
+            background-color: #f1f1f1;
+            height: 320px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            margin-top: 30px;
+            padding-top: 5px;
+        }
+
+        .parent button {
+            box-sizing: border-box;
+            width: calc(300px/3);
+            height: calc(300px/3);
+            background-color: orange;
+            font-size: 90px;
+        }
+
+        button:hover {
+            background-color: rgb(255, 178, 36);
+        }
+
+        button:active {
+            border: none;
+        }
+
+        .nav {
+            width: 320px;
+            height: 120px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            font-weight: 800;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .nav span {
+            color: #f1f1f1;
+            padding: 5px;
+        }
+
+        .shadow {
+            box-shadow: 5px 5px 20px #888888;
+        }
+
+        .footer {
+            height: 40px;
+        }
+
+        .footer button:active {
+            background-color: #fdfbfb;
+            border: 2px solid black;
+        }
+
+        .footer button:hover {
+            background-color: #fafafa;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav shadow ">
+        <span></span> Turns
+    </div>
+    <div class="parent shadow">
+        <button id="io1" onclick="clickL(this.id)"></button>
+        <button id="io2" onclick="clickL(this.id)"></button>
+        <button id="io3" onclick="clickL(this.id)"></button>
+
+        <button id="io4" onclick="clickL(this.id)"></button>
+        <button id="io5" onclick="clickL(this.id)"></button>
+        <button id="io6" onclick="clickL(this.id)"></button>
+
+        <button id="io7" onclick="clickL(this.id)"></button>
+        <button id="io8" onclick="clickL(this.id)"></button>
+        <button id="io9" onclick="clickL(this.id)"></button>
+    </div>
+    <div class=" nav footer">
+        <button onclick="rest()">Play Again</button>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
